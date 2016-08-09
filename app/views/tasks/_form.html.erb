@@ -1,0 +1,13 @@
+<div class= "text-center padded">
+  <%= form_for @task do |t|%>
+    <%= t.label :order %>
+    <%= t.text_field :order%>
+
+    <%= t.label :name %>
+    <%=t.text_field :name%>
+
+    <%= t.label :state %>
+    <%= t.text_field :state%>
+    <%= t.submit%>
+  <% end%>
+</div>

@@ -10,4 +10,4 @@ Task.destroy_all
 Task.create!(name: "First task",order:  1,state: false)
 Task.create!(name: "Second task",order: 2, state: true)
 Task.create!(name: "Third task", order: 3,state: true)
-Task.create!(name: "4th task",order:  4,state: false)
+Task.create!(name: "update the task",order:  4,state: false)
