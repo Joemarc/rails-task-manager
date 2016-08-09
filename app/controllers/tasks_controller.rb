@@ -4,11 +4,16 @@ class TasksController < ApplicationController
 
   end
 
-  def show
-  end
-
   def index
     @tasks = Task.all
+  end
+
+
+   def show
+  end
+
+  def new
+    @task = Task.new
   end
 
   def create
@@ -17,15 +22,10 @@ class TasksController < ApplicationController
     redirect_to task_path(@task)
   end
 
-  def new
-  end
-
   def edit
     @task = Task.find(params[:id])
   end
 
-  def show
-  end
 
   def update
     @task.update(task_params)
